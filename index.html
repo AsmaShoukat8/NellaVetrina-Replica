@@ -3,48 +3,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
         <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<body>
+<body class="position-relative ">
     
-
+  
    <nav class="navbar navbar-expand-lg flex-column position-relative " style="z-index: 10000;" >
 
  
-  <div class="container-fluid border-bottom pb-3 pt-3 " >
+  <div class="container-fluid d-flex align-items-center justify-content-between border-bottom py-3">
 
    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
+      <span class=" burger navbar-toggler-icon "></span>
     </button>
 
 
+
+    
    
-    <div class="d-flex align-items-center ms-3 gap-3 me-4">
-      <h6 class="mb-0">CONTACT</h6>
-      <i class="fa-regular fa-envelope"></i>
-      <i class="fa-solid fa-phone"></i>
+    <div class="navstart d-flex align-items-center gap-3 me-4" >
+      <h6 class="mb-0">CONTACT US</h6>
+    <div class="phoneic">
+      <i class="  fa-solid fa-phone">
+         <span class="tooltip-text">+1 516 (928)-5007</span>
+      </i>
+      </div>
+
     </div>
 
    
-    <a class="navbar-brand  " style="margin-left: 30%; " href="#">
-      NELLA VETRINA
+    <a class="navbar-brand  mx-auto  " style="padding-left: 180px;" href="#">
+      <img src="nvicon.jpg" width="45" class="rounded-circle mb-1" alt=""> NELLA VETRINA
     </a>
 
     
 
     
-    <div class="d-flex align-items-center ms-auto gap-3">
+    <div class="navright d-flex align-items-center ms-auto gap-3">
       <i class="fa-regular fa-circle-user"></i>
       <i class="fa-solid fa-heart"></i>
 
-      <div class="input-group" style="width:150px;">
+      <div class="inp input-group " style="width:150px; ">
         <input type="text" class="form-control" placeholder="Search..." style="border: none;">
         <button class="btn">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="searchicon fa-solid fa-magnifying-glass" ></i>
         </button>
       </div>
     </div>
@@ -52,12 +59,159 @@
   </div>
 
   
-  <div class="position-relative navbar-collapse justify-content-center w-100  mt-2 " id="nav">
+  <div class="position-relative navbar-collapse justify-content-center w-100  mt-2  " id="nav" >
     <ul class="navbar-nav gap-4 py-2  " style="font-size: 14px;">
       <li class="nav-item"><a class="nav-link text-dark " href="#">NVCUSTOM</a></li>
 
       <li class="nav-item  mega-dropdown-item " style="position: static;"><a class="nav-link text-dark" href="#">FURNITURE
-      </a>
+      <i class="ma fa-solid fa-chevron-right " onclick="clickme(1)"></i> 
+      
+    
+    </a>
+       
+       <div id="nb1" class="smallnavbox"  style=" position: absolute;
+  top: 0px;
+  right: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1050;
+  background-color: #ffffff;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  display: none;
+  ">
+  <div class="row g-4 ms-2 mt-1 ">
+      <i class="ma fa-solid fa-chevron-left mb-5 fs-4 " onclick="clickmetoo(1)"></i>
+      <div class="col-md-2 " style="border-right: 1px solid rgba(57, 55, 55, 0.15); ">
+        <h5 class="fw-bold fs-4 text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Living Room</h5>
+        <small class="text-muted fw-bold d-block mb-1" style="font-size: 14px;">SEATING</small>
+        <ul class="list-unstyled mb-2" style="font-size: 15px;">
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Sofas & Sectionals</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Sofas Chairs</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Swivel Chairs</a></li>
+           <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Lounge Chairs</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Benches & Ottomans</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Accent & End Tables</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Consoles & Servers</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Bar Cabinets</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">TV / Media & Wall Units</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Mirrors</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2" style="border-right: 1px solid rgba(57, 55, 55, 0.15);">
+        <h5 class=" fs-4 fw-bold text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Dining Room</h5>
+        <small class="text-muted fw-bold d-block mb-1" style="font-size: 14px;">SEATING & TABLES</small>
+        <ul class="list-unstyled mb-2" style="font-size: 15px;">
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Dining Chairs</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Dining Tables</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Stools</a></li>
+           <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Banquettes & Benches</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Extension Dining Tables</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Credenzas & Sideboards</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Bar Cabinets & Cabinets</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2" style="border-right: 1px solid rgba(57, 55, 55, 0.15);">
+        <h5 class=" fs-4 fw-bold text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Bedroom</h5>
+        <small class="text-muted fw-bold d-block mb-1" style="font-size: 14px;">BEDS & STORAGE</small>
+        <ul class="list-unstyled" style="font-size: 15px;">
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Beds & Storage Beds</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Bedside Tables</a></li>
+           <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Dressers, Chests & Armoires</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Makeup & Vanity Tables</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Benches & Ottomans</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Wardrobes & Closets</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Mirrors & Screens</a></li>
+        
+        </ul>
+      </div>
+
+      <div class="col-md-2" style="border-right: 1px solid rgba(57, 55, 55, 0.15);">
+        <h5 class=" fs-4 fw-bold text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Office</h5>
+        <small class="text-muted fw-bold d-block mb-1" style="font-size: 14px;">WORKSPACES</small>
+        <ul class="list-unstyled" style="font-size: 15px;">
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Office Desks & Chairs</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">TV / Media Units</a></li>
+           <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Multi-family Dev.</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Wall Panelling</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Home Theaters</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Games Rooms</a></li>
+        
+        </ul>
+      </div>
+
+      <div class="col-md-2" style="border-right: 1px solid rgba(57, 55, 55, 0.15);">
+        <h5 class=" fs-4 fw-bold text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Contract</h5>
+        <ul class="list-unstyled mb-3" style="font-size: 15px;">
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Hotel & Hospitality</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Restaurants</a></li>
+        </ul>
+        
+        <h5 class="fs-4 fw-bold text-uppercase mb-1" style="font-size: 12px; letter-spacing: 0.5px;">Custom Projects</h5>
+        <ul class="list-unstyled" style="font-size: 15px;">
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Architectural Doors</a></li>
+           <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Metal Furniture</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Glass</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Mirrored</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2">
+        <h5 class=" fs-4 fw-bold text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Materials</h5>
+        <ul class="list-unstyled" style="font-size: 15px;">
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Leather</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Wood</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Marble</a></li>
+        </ul>
+      </div>
+
+    </div> <div class="row mt-3 pt-3 border-top align-items-center" style="border-color: rgba(0,0,0,0.08) !important;">
+      
+      <div class="col-md-4 d-flex mb-3 mt-3 ms-3  ">
+        
+         <div class="" style="font-size: 12px;">
+        <span class="me-3">
+          <strong class="text-dark ">FAVOURITES</strong> 
+          
+        </span>
+        <span>
+          <strong class="text-dark ">CUSTOM PROJECTS</strong> 
+          
+        </span>
+      </div>
+
+        
+      </div>
+
+     
+
+    </div>
+       </div>
+
+       <script>
+  function clickme(boxnum) {
+
+   let a = document.getElementById(`nb${boxnum}`);
+    
+    a.style.transform = 'translateX(0)';
+
+
+  }
+
+
+  function clickmetoo(boxnum) {
+    let a = document.getElementById(`nb${boxnum}`);
+    a.style.transform = 'translateX(+100%)';
+  }
+  
+</script>
+
+
+
+
+
        <!---->
   <div class="mega-dropdown-menu position-absolute  w-100 bg-light text-dark p-4 shadow">
   <div class="container-fluid">
@@ -106,8 +260,7 @@
         <h5 class="fw-bold text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Contract</h5>
         <ul class="list-unstyled mb-3" style="font-size: 13px;">
           <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Hotel & Hospitality</a></li>
-          <li><a href="#" class="text-se
-            condary text-decoration-none d-block py-1">Restaurants</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Restaurants</a></li>
         </ul>
         
         <h5 class="fw-bold text-uppercase mb-1" style="font-size: 12px; letter-spacing: 0.5px;">Custom Projects</h5>
@@ -212,7 +365,127 @@
     </div>
         </li>
 
-      <li class="nav-item  mega-dropdown-item" style="position: static;"><a class="nav-link text-dark" href="#">BATHROOM</a>
+      <li class="nav-item  mega-dropdown-item" style="position: static;"><a class="nav-link text-dark" href="#">BATHROOM
+        <i class="fa-solid fa-chevron-right ma"  onclick="clickme(2)"  ></i>
+      </a>
+
+
+
+       <div id="nb2" class="smallnavbox"  style=" position: absolute;
+  top: 0px;
+  right: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1050;
+  background-color: #ffffff;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  display: none;
+  ">
+  <div class="row g-4 ms-2 mt-1 ">
+      <i class="ma fa-solid fa-chevron-left mb-5 fs-4 " onclick="clickmetoo(2)"></i>
+      <div class="col-md-2 " style="border-right: 1px solid rgba(57, 55, 55, 0.15); ">
+        <h5 class="fw-bold fs-4 text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Vanities</h5>
+        <ul class="list-unstyled mb-2" style="font-size: 15px;">
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Cabinets</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Marble Vanities</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Stone Vanities</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Modern Vanities</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Contemporary Vanities</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Classic Vanities</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Luxury Vanities</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Vanities</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Bathroom Mirrors</a></li>
+        
+        </ul>
+      </div>
+
+      <div class="col-md-2" style="border-right: 1px solid rgba(57, 55, 55, 0.15);">
+        <h5 class=" fs-4 fw-bold text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Tubs</h5>
+        
+        <ul class="list-unstyled mb-2" style="font-size: 15px;">
+           <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Stone Tubs</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Marble Tubs</a></li>
+           <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Corian & Resin Tubs</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Tubs</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2" style="border-right: 1px solid rgba(57, 55, 55, 0.15);">
+        <h5 class=" fs-4 fw-bold text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Steam Rooms/Saunas</h5>
+       
+        <ul class="list-unstyled" style="font-size: 15px;">
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Generators</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Steam Rooms</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Saunas</a></li>
+        
+        </ul>
+      </div>
+
+      <div class="col-md-2" style="border-right: 1px solid rgba(57, 55, 55, 0.15);">
+        <h5 class=" fs-4 fw-bold text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Sinks</h5>
+        
+        <ul class="list-unstyled" style="font-size: 15px;">
+           <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Sit On Sinks</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Pedestal Basins</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Marble Sinks</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Integrated Sinks</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Sinks & Basins</a></li>
+        
+        </ul>
+      </div>
+
+      <div class="col-md-2" style="border-right: 1px solid rgba(57, 55, 55, 0.15);">
+        <h5 class=" fs-4 fw-bold text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Tiles</h5>
+        <ul class="list-unstyled mb-3" style="font-size: 15px;">
+         <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Marble Tiles</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Italian Ceramic Tiles</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Murano Glass Tiles</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Tiles</a></li>
+        </ul>
+        
+        <h5 class="fs-4 fw-bold text-uppercase mb-1" style="font-size: 12px; letter-spacing: 0.5px;">Contract</h5>
+        <ul class="list-unstyled" style="font-size: 15px;">
+           <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Multi-Family Developments</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2">
+        <h5 class=" fs-4 fw-bold text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Materials</h5>
+        <ul class="list-unstyled" style="font-size: 15px;">
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Leather</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Wood</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Marble</a></li>
+        </ul>
+      </div>
+
+    </div> <div class="row mt-3 pt-3 border-top align-items-center" style="border-color: rgba(0,0,0,0.08) !important;">
+      
+      <div class="col-md-4 d-flex mb-3 mt-3 ms-3  ">
+        
+         <div class="" style="font-size: 12px;">
+        <span class="me-3">
+          <strong class="text-dark ">FAVOURITES</strong> 
+          
+        </span>
+        <span>
+          <strong class="text-dark ">CUSTOM PROJECTS</strong> 
+          
+        </span>
+      </div>
+
+        
+      </div>
+
+     
+
+    </div>
+       </div>
+
+
+
+
+
      <div class="mega-dropdown-menu position-absolute start-0 w-100 bg-light text-dark p-4 shadow">
   <div class="container-fluid">
     
@@ -290,6 +563,7 @@
 
         <div class="col-md-2-4" style="border-right: 2px solid rgba(57, 55, 55, 0.678); flex: 0 0 20%; max-width: 20%; padding-left: 15px;">
           <ul class="list-unstyled mb-0" style="font-size: 13px;">
+             
             <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Integrated Sinks</a></li>
             <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Sinks & Basins</a></li>
           </ul>
@@ -297,6 +571,7 @@
 
         <div class="col-md-2-4" style="border-right: 2px solid rgba(57, 55, 55, 0.678); flex: 0 0 20%; max-width: 20%; padding-left: 15px;">
           <ul class="list-unstyled mb-3" style="font-size: 13px;">
+           
             <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Murano Glass Tiles</a></li>
             <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Tiles</a></li>
           </ul>
@@ -348,7 +623,103 @@
       
    
       
-      <li class="nav-item  mega-dropdown-item" style="position: static;"><a class="nav-link text-dark " href="">LIGHTNING</a>
+      <li class="nav-item  mega-dropdown-item" style="position: static;"><a class="nav-link text-dark " href="#">LIGHTNING
+        <i class="fa-solid fa-chevron-right ma " onclick="clickme(3)"  ></i>
+      </a>
+
+
+
+      <div id="nb3" class="smallnavbox"  style=" position: absolute;
+  top: 0px;
+  right: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1050;
+  background-color: #ffffff;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  display: none;
+  ">
+  
+  <div class="row g-4 ms-2 mt-1 ">
+      <i class="ma fa-solid fa-chevron-left mb-5 fs-4 " onclick="clickmetoo(3)"></i>
+      <div class="col-md-2 " style="border-right: 1px solid rgba(57, 55, 55, 0.15); ">
+        <h5 class="fw-bold fs-4 text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Lightning</h5>
+        <ul class="list-unstyled mb-2" style="font-size: 15px;">
+           <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Chandeliers</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Ceiling Lights</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Wall Lights</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Table Lamps</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Floor Lamps</a></li>
+        
+        </ul>
+      </div>
+
+      <div class="col-md-2" style="border-right: 1px solid rgba(57, 55, 55, 0.15);">
+        <h5 class=" fs-4 fw-bold text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Custom Lightning</h5>
+        
+        <ul class="list-unstyled mb-2" style="font-size: 15px;">
+             <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Crystal Lighting</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Metal Lighting</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Murano Glass Lighting</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="col-md-2" style="border-right: 1px solid rgba(57, 55, 55, 0.15);">
+        <h5 class=" fs-4 fw-bold text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Contract % Hospitality </h5>
+       
+        <ul class="list-unstyled" style="font-size: 15px;">
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Generators</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Steam Rooms</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Saunas</a></li>
+        
+        </ul>
+      </div>
+
+      <div class="col-md-2" style="border-right: 1px solid rgba(57, 55, 55, 0.15);">
+        <h5 class=" fs-4 fw-bold text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Lightning Materials</h5>
+        
+        <ul class="list-unstyled" style="font-size: 15px;">
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Murano Glass Lighting</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Glass Lighting</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Alabaster Lighting</a></li>
+        
+        </ul>
+      </div>
+
+      
+
+      
+
+    </div> <div class="row mt-3 pt-3 border-top align-items-center" style="border-color: rgba(0,0,0,0.08) !important;">
+      
+      <div class="col-md-4 d-flex mb-3 mt-3 ms-3  ">
+        
+         <div class="" style="font-size: 12px;">
+        <span class="me-3">
+          <strong class="text-dark ">FAVOURITES</strong> 
+          
+        </span>
+        <span>
+          <strong class="text-dark ">CUSTOM PROJECTS</strong> 
+          
+        </span>
+      </div>
+
+        
+      </div>
+
+     
+
+    </div>
+       
+
+ </div>
+
+
+
+
       <div class="mega-dropdown-menu position-absolute start-0 w-100 bg-light text-dark p-4 shadow">
   <div class="container-fluid">
     
@@ -376,6 +747,7 @@
         <h5 class="fw-bold text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Contract & Hospitality</h5>
         <ul class="list-unstyled mb-0" style="font-size: 13px;">
           <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Hotel & Hospitality Italian Lighting</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Restaurant Lighting</a></li>
         </ul>
       </div>
 
@@ -386,36 +758,25 @@
           <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Glass Lighting</a></li>
           <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Alabaster Lighting</a></li>
         </ul>
-      </div>
+      </div> 
 
     </div> <div class="collapse" id="moreLightingLinks">
       <div class="row pt-2 mt-2 border-top border-light">
         
-        <div class="col-md-3" style="border-right: 2px solid rgba(57, 55, 55, 0.678);">
+        <div class="col-md-3" >
           <ul class="list-unstyled mb-0" style="font-size: 13px;">
+
+            
             <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Table Lamps</a></li>
             <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Floor Lamps</a></li>
           </ul>
         </div>
 
-        <div class="col-md-3" style="border-right: 2px solid rgba(57, 55, 55, 0.678); padding-left: 15px;">
-          <ul class="list-unstyled mb-0" style="font-size: 13px;">
-            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Glass Lighting</a></li>
-          </ul>
-        </div>
+        
 
-        <div class="col-md-3" style="border-right: 2px solid rgba(57, 55, 55, 0.678); padding-left: 15px;">
-          <ul class="list-unstyled mb-0" style="font-size: 13px;">
-            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Restaurant Lighting</a></li>
-          </ul>
-        </div>
+       
 
-        <div class="col-md-3" style="padding-left: 15px;">
-          <ul class="list-unstyled mb-0" style="font-size: 13px;">
-            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Metal Lighting</a></li>
-            <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Crystal Lighting</a></li>
-          </ul>
-        </div>
+       
 
       </div>
     </div> <div class="row mt-3 pt-3 border-top align-items-center" style="border-color: rgba(0,0,0,0.08) !important;">
@@ -447,7 +808,89 @@
 
      <li class="nav-item  "><a class="nav-link text-dark" href="#">KITCHEN</a></li>
       
-      <li class="nav-item  mega-dropdown-item" style="position: static;"><a class="nav-link text-dark " href="">OUTDOOR</a>
+      <li class="nav-item  mega-dropdown-item" style="position: static;"><a class="nav-link text-dark " href="#">OUTDOOR
+        <i class="fa-solid fa-chevron-right ma" onclick="clickme(4)"></i>
+      </a>
+
+
+
+      
+       <div id="nb4" class="smallnavbox"  style=" position: absolute;
+  top: 0px;
+  right: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1050;
+  background-color: #ffffff;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  display: none;
+  ">
+  <div class="row g-4 ms-2 mt-1 ">
+      <i class="ma fa-solid fa-chevron-left mb-5 fs-4 " onclick="clickmetoo(4)"></i>
+      <div class="col-md-2 " style="border-right: 1px solid rgba(57, 55, 55, 0.15); ">
+        <h5 class="fw-bold fs-4 text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Outdoor Furniture</h5>
+        <ul class="list-unstyled mb-2" style="font-size: 15px;">
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Outdoor Sofa Chairs</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Outdoor Sofas & Sectionals</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Outdoor Chaise Lounges</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Outdoor Dining Tables</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Outdoor Dining Chairs</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Outdoor Benches & Ottomans</a></li>
+        
+        </ul>
+      </div>
+
+      <div class="col-md-2" style="border-right: 1px solid rgba(57, 55, 55, 0.15);">
+        <h5 class=" fs-4 fw-bold text-uppercase mb-2" style="font-size: 13px; letter-spacing: 0.5px;">Outdoor Lightning</h5>
+        
+        <ul class="list-unstyled mb-2" style="font-size: 15px;">
+           <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Outdoor Wall Lights</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Outdoor Table Lamps</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Outdoor Floor Lamps</a></li>
+        </ul>
+      </div>
+
+      
+
+      
+
+
+
+    </div> <div class="row mt-3 pt-3 border-top align-items-center" style="border-color: rgba(0,0,0,0.08) !important;">
+      
+      <div class="col-md-4 d-flex mb-3 mt-3 ms-3  ">
+        
+         <div class="" style="font-size: 12px;">
+        <span class="me-3">
+          <strong class="text-dark ">FAVOURITES</strong> 
+          
+        </span>
+        <span>
+          <strong class="text-dark ">CUSTOM PROJECTS</strong> 
+          
+        </span>
+      </div>
+
+        
+      </div>
+
+     
+
+    </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="mega-dropdown-menu position-absolute start-0 w-100 bg-light text-dark p-4 shadow">
   <div class="container-fluid">
     <div class="row">
@@ -484,41 +927,52 @@
 
 
 <!--images-->
-<div class="w-100 h-100 slider-container " style="overflow: hidden; position: relative;z-index: 0; ">
+<div class="w-100 slider-container " style="overflow: hidden; position: relative;z-index: 0; height:100vh;">
     <!-- Combined into a single class attribute and added text-light -->
 
-    <button class=" button border position-absolute bg-transparent text-light  " type="button" style=" width: 250px; height: 50px; z-index: 2; font-size: 13PX; left: 40%; top: 60%; "> <SPan> ASK A NELLA VETRINA EXPERT</SPan></button>
-    <a href="#cat1"><i class="fa-solid fa-angles-down fa-bounce text-light" style="left: 50%; top: 80%; position: absolute; z-index: 1; font-size: 50px; "></i></a>
-<div class="imgs img1 w-100 h-100 ">
+    <div class="  d-flex justify-content-center   "><button id="askexpspan" class="  button border position-absolute bg-transparent text-light  " type="button" style="top:60%;  transform: translateX(5%);" > <SPan > ASK A NELLA VETRINA EXPERT</SPan></button>
+    <a href="#cat1"><i class="position-absolute fa-solid fa-angles-down fa-bounce text-light" style=" left:50% ; bottom: 20px; z-index: 1; font-size: 40px; "></i></a>
+    </div>
+    <div class="imgs img1 w-100 h-100 ">
  
     <div>
-    <h1 class="text-light  " style="font-size: 70px; margin-left: 50px; padding-top: 100px;">NELLA VETRINA</h1>
-    
-<p class="text-light " style=" margin-left: 50px; ">SHOWCASING THE BEST IN LUXURY ITALIAN FURNITURE, KITCHEN, BATHROOM AND LIGHTING DESIGN</p>
+    <h1 class="hero-title text-light">NELLA VETRINA</h1>
+
+<p class="hero-text text-light">
+  SHOWCASING THE BEST IN LUXURY ITALIAN FURNITURE, KITCHEN, BATHROOM AND LIGHTING DESIGN
+</p>
  </div>
 </div>
 
 
 <div class="imgs img2  w-100 h-100 ">
  <div class="d-flex flex-column justify-content-start align-items-start" >
-    <h1 class="text-light " style="font-size: 70px; margin-left: 50px; padding-top: 100px;">NELLA VETRINA</h1>
-    <p class="text-light " style=" margin-left: 50px; ">SHOWCASING THE BEST IN LUXURY ITALIAN FURNITURE, KITCHEN, BATHROOM AND LIGHTING DESIGN</p>
+   <h1 class="hero-title text-light">NELLA VETRINA</h1>
+
+<p class="hero-text text-light">
+  SHOWCASING THE BEST IN LUXURY ITALIAN FURNITURE, KITCHEN, BATHROOM AND LIGHTING DESIGN
+</p>
  </div>
 </div>
 
 <div class=" imgs img3 w-100 h-100 ">
  <div class="d-flex flex-column justify-content-start align-items-start ">
-    <h1 class="text-light " style="font-size: 70px; margin-left: 50px; padding-top: 100px;">NELLA VETRINA</h1>
+   <h1 class="hero-title text-light">NELLA VETRINA</h1>
 
-    <p class="text-light " style=" margin-left: 50px; ">SHOWCASING THE BEST IN LUXURY ITALIAN FURNITURE, KITCHEN, BATHROOM AND LIGHTING DESIGN</p>
+<p class="hero-text text-light">
+  SHOWCASING THE BEST IN LUXURY ITALIAN FURNITURE, KITCHEN, BATHROOM AND LIGHTING DESIGN
+</p>
  </div>
 </div>
 
 
 <div class="imgs img4  w-100 h-100 ">
   <div class="d-flex flex-column justify-content-start align-items-start" >
-    <h1 class="text-light   " style="font-size: 70px; margin-left: 50px; padding-top: 100px;">NELLA VETRINA</h1>
-   <p class="text-light " style=" margin-left: 50px; ">SHOWCASING THE BEST IN LUXURY ITALIAN FURNITURE, KITCHEN, BATHROOM AND LIGHTING DESIGN</p>
+   <h1 class="hero-title text-light">NELLA VETRINA</h1>
+
+<p class="hero-text text-light">
+  SHOWCASING THE BEST IN LUXURY ITALIAN FURNITURE, KITCHEN, BATHROOM AND LIGHTING DESIGN
+</p>
    </div>
 </div>
 
@@ -531,14 +985,14 @@
 <!--container grid below-->
 <div class="container-fluid " id="cat1">
 
-<div class="row mb-3">
+<div class="row mb-3  g-3">
 
-<div class="col-md-6 position-relative overflow-hidden">
+<div class="col-lg-6 position-relative overflow-hidden">
     <img class=" equal-width-img" src="cat2img/furniture-home3.jpeg" alt="" >
- 
+   <div class="position-absolute w-100" style="bottom: 5px; left: 0;" ><h6 class="text-light text-center " style="font-size: 15px; font-weight: BOLD;">FURNITURE</h6></div> 
 </div>
 
-<div class="col-md-6 position-relative overflow-hidden">
+<div class="col-lg-6 position-relative overflow-hidden">
     <img  class="equal-width-img"src="cat2img/kitchen-home.jpeg" alt="" >
     <div class="position-absolute w-100" style="bottom: 5px; left: 0;" ><h6 class="text-light text-center " style="font-size: 15px; font-weight: BOLD;">KITCHEN</h6></div> 
 </div>
@@ -548,14 +1002,14 @@
 </div>
 
 
-<div class="row mb-3">
+<div class="row mb-3  g-3">
 
-<div class="col-md-6 position-relative overflow-hidden">
+<div class="col-lg-6 position-relative overflow-hidden">
     <img class=" equal-width-img" src="cat2img/bathroom-home.jpeg" alt="" >
  <div class="position-absolute w-100" style="bottom: 5px; left: 0;"><h6 class=" text-light text-center " style="font-size: 15px; font-weight: BOLD;">BATHROOM</h6></div> 
 </div>
 
-<div class="col-md-6 position-relative overflow-hidden">
+<div class="col-lg-6 position-relative overflow-hidden">
     <img  class="equal-width-img" src="cat2img/lighting-home.jpeg" alt="" >
     <div class="position-absolute w-100" style="bottom: 5px; left: 0;"  ><h6 class="text-light text-center " style="font-size: 15px; font-weight: BOLD;">LIGHTING</h6></div> 
 </div>
@@ -573,83 +1027,78 @@
 
 
 <!--video-->
-
-<div class="position-relative  w-100 h-100 mt-5 " >
-        <iframe 
-          src="https://player.vimeo.com/video/854297973?autoplay=1&muted=1&loop=1&autopause=0&controls=0&background=1&dnt=1&pip=0&keyboard=0&title=0&byline=0&portrait=0&badge=0&color=000000" 
-          class="w-100 h-100 "
-          allow="autoplay; fullscreen" 
-          style="border: none; object-fit: cover; box-shadow: 0px 10px 30px 2px rgba(244, 236, 194, 0.45);">
-        </iframe>
-    </div>
-    
+ <div class="video-section mt-5">
+    <iframe
+        src="https://player.vimeo.com/video/854297973?autoplay=1&muted=1&loop=1&autopause=0&controls=0&background=1&dnt=1&pip=0&keyboard=0&title=0&byline=0&portrait=0&badge=0&color=000000"
+        class="w-100 h-100"
+        allow="autoplay; fullscreen"
+        style="border:none;">
+    </iframe>
+</div>
 
 
+  
 <br>
 <br>
 
 <!--lets make the products catalog through container grid-->
-<div class="w-100 h-auto mt-5 ">
+<div class="w-100 h-auto mt-4 ">
 <div><h3 class="text-center fw-bold pt-2 pb-2" >EXPLORE ALL PRODUCTS</h3></div>
 
 <!--container grid below-->
 <div class="container-fluid">
-<div class="row mb-3 ">
+<div class="row mb-3  g-3 ">
 
-<div class="col-md-3 position-relative overflow-hidden">
+<div class="col-md-6 col-lg-3 position-relative overflow-hidden">
     <img class=" equal-width-img animate" src="catgsimg/col1.jpg" alt="" >
  <div class="position-absolute w-100" style="bottom: 5px; left: 0;"><h6 class=" text-light text-center " style="font-size: 15px;">LIGHTNING</h6></div> 
 </div>
 
-<div class="col-md-6 position-relative overflow-hidden">
+<div class="col-md-6 col-lg-6 position-relative overflow-hidden">
     <img  class="equal-width-img animate"src="catgsimg/col2.jpg" alt="" >
     <div class="position-absolute w-100" style="bottom: 5px; left: 0;" ><h6 class="text-light text-center " style="font-size: 15px;">FURNITURE</h6></div> 
 </div>
 
-<div class="col-md-3 position-relative  overflow-hidden" >
+<div class="col-md-6 col-lg-3 position-relative  overflow-hidden" >
     <img class="equal-width-img animate" src="catgsimg/col3.jpg" alt="" >
     <div class="position-absolute w-100" style="bottom: 5px; left: 0;"><h6 class=" text-light text-center " style="font-size: 15px;">SEATING</h6></div> 
 </div>
 
-</div>
 
-<div class="row mb-3">
 
-<div class="col-md-5 position-relative  overflow-hidden">
+<div class="col-md-6 col-lg-5 position-relative  overflow-hidden">
     <img class=" equal-width-img animate" src="catgsimg/col4.jpg" alt="" >
  <div class="position-absolute w-100" style="bottom: 5px; left: 0;"><h6 class=" text-light text-center " style="font-size: 15px;">OFFICE</h6></div> 
 </div>
 
-<div class="col-md-3 position-relative  overflow-hidden">
+<div class="col-md-6 col-lg-3 position-relative  overflow-hidden">
     <img  class="equal-width-img animate"src="catgsimg/col5.jpg" alt="" >
     <div class="position-absolute w-100" style="bottom: 5px; left: 0;" ><h6 class="text-light text-center " style="font-size: 15px;">WALL UNITS</h6></div> 
 </div>
 
-<div class="col-md-4 position-relative  overflow-hidden" >
+<div class="col-md-6 col-lg-4 position-relative  overflow-hidden" >
     <img class="equal-width-img animate" src="catgsimg/col6.jpg" alt="" >
     <div class="position-absolute w-100" style="bottom: 5px; left: 0;"><h6 class=" text-light text-center " style="font-size: 15px;">WALL PANELS</h6></div> 
 </div>
 
-</div>
 
-<div class="row mb-3">
 
-<div class="col-md-3 position-relative  overflow-hidden">
+<div class="col-md-6 col-lg-3 position-relative  overflow-hidden">
     <img class=" equal-width-img animate" src="catgsimg/col7.jpg" alt="" >
  <div class="position-absolute w-100" style="bottom: 5px; left: 0;"><h6 class=" text-light text-center " style="font-size: 15px;">WARDROBE</h6></div> 
 </div>
 
-<div class="col-md-3 position-relative  overflow-hidden">
+<div class="col-md-6 col-lg-3 position-relative  overflow-hidden">
     <img  class="equal-width-img animate"src="catgsimg/col8.jpg" alt="" >
     <div class="position-absolute w-100" style="bottom: 5px; left: 0;" ><h6 class="text-light text-center " style="font-size: 15px;">BATHROOM</h6></div> 
 </div>
 
-<div class="col-md-3 position-relative  overflow-hidden" >
+<div class=" col-md-6 col-lg-3 position-relative  overflow-hidden" >
     <img class="equal-width-img animate" src="catgsimg/col9.jpg" alt="" >
     <div class="position-absolute w-100" style="bottom: 5px; left: 0;"><h6 class=" text-light text-center " style="font-size: 15px;">KITCHEN</h6></div> 
 </div>
 
-<div class="col-md-3 position-relative  overflow-hidden" >
+<div class="col-md-6 col-lg-3 position-relative  overflow-hidden" >
     <img class="equal-width-img animate" src="catgsimg/collast.png" alt="" >
     <div class="position-absolute w-100" style="bottom: 5px; left: 0;"><h6 class=" text-light text-center " style="font-size: 15px;">TRUNKEY</h6></div> 
 </div>
@@ -661,21 +1110,22 @@
 </div>
     
 
-<div class="container-fluid overflow-hidden w-100 h-auto position-relative bg-dark " style="margin-top: 100px;">
-<img src="story_background.jpg" alt="" style="z-index: 1; " class="w-100">
-<div class="position-absolute w-100 h-100 text-center  text-light d-flex flex-column justify-content-center align-items-center gap-3" style=" z-index: 2; top: 0;">
+<div class="ourstorydiv container-fluid overflow-hidden  position-relative bg-dark " style="margin-top: 100px;">
+<img src="story_background.jpg" alt="" style="z-index: 1; " class="story-img">
+<div class=" position-absolute w-100 h-100 text-center  text-light d-flex flex-column justify-content-center align-items-center gap-3" style=" z-index: 2; top: 0;">
 <h2 style="margin-bottom: 50px;">OUR STORY</h3>
 <p>Our story</p>
 
 <a href="" class=" text-decoration-none fw-bold text-light">Our commitment to craftmanship</a>
 <div class=" horzfade"></div>
+
 </div>
 </div>
 
 
 
 <!--container grid below-->
-<div class="container-fluid mt-5 mb-5 ">
+<div class="presscont container-fluid mt-5 mb-5 ">
  <div><h3 class="text-center fw-bold mt-2 mb-5" >PRESS</h3></div>
 <div class="row mb-3">
 
@@ -708,142 +1158,438 @@
 
 
 </div>
+</div>
+<div id="pressCarousel"
+     class="carousel slide d-lg-none " style="height: 55%;"
+     data-bs-ride="carousel"
+     data-bs-interval="1000">
+  <div class="carousel-inner  pt-5 mb-5">
+   <div><h3 class=" text-center me-5 mb-5 ms-3 fw-bold " >PRESS</h3></div>
+    <div class="carousel-item active">
+      <div class="row ">
+        <div class="col-6 d-flex justify-content-center align-items-center ">
+           <img class=" press-img "  src="pressimg/press_1.webp"  alt="" >
+        </div>
+        <div class="col-6  d-flex justify-content-center align-items-center " >
+          <img  class="press-img  "src="pressimg/press_2.webp" alt="" >
+        </div>
+      </div>
+    </div>
 
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-6  d-flex justify-content-center align-items-center">
+          <img class=" press-img  " src="pressimg/press_3.webp" alt="" >
+        </div>
+        <div class="col-6 d-flex justify-content-center align-items-center ">
+           <img class=" press-img  " src="pressimg/p4.webp" alt="" >
+        </div>
+      </div>
+    </div>
 
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-6  d-flex justify-content-center align-items-center ">
+         <img class="press-img  " src="pressimg/press_5.webp" alt="" >
+        </div>
+        <div class="col-6  d-flex justify-content-center align-items-center">
+          <img class="press-img " src="pressimg/press_6.webp" alt="" >
+        </div>
+      </div>
+    </div>
 
-
-
-
-
+  </div>
 </div>
 
 
-<div class="w-100 position-relative" style="background-color: #F5F5F5; height: 200px;">
-<div  style="margin-bottom: 150px;"><h3 class="text-center  pt-5 mb-5 ms-3 text-dark" >INSTAGRAM FEED</h3></div>
-<div class="d-flex justify-content-center align-items-center " style="position: absolute; width: 15%; height: 20%; left: 43%; top: 65%; background-color: #ffffff;">
-    
-    <a href="" class="text-decoration-none text-dark"><i class="fa-brands fa-instagram"></i>
-   <small style="font-size: 12px;">FOLLOW US</small> 
+
+
+
+
+
+
+
+
+
+
+<div class="w-100 position-relative" style="background-color: #F5F5F5; padding-bottom: 80px;">
+
+  <h3 class="text-center pt-5 mb-5 text-dark">INSTAGRAM FEED</h3>
+
+  <div class="instagram-grid">
+
+    <!-- Image 1 -->
+    <div class="insta-item" onclick="openLightbox(0)">
+      <img src="https://nellavetrina.com/wp-content/uploads/sb-instagram-feed-images/718190678_1023601810328133_2090369140582260045_nfull.webp"
+        style="width:100%; height:500px; object-fit:cover; display:block;">
+      <div class="insta-overlay">
+        <div class="overlay-top">
+          <span class="username">@nellavetrina</span>
+          <span class="caption">Where detail, light, and landscape converge 🖤 Designed by @simondeburbure. Photography by Thomas De Bruuyne for @cafeine.</span>
+          <div class="tags">#nellavetrina #italianfurniture #customfurniture #italiandesign #luxuryfurniture</div>
+        </div>
+        <div class="overlay-bottom">
+          <span>⏱ June 5</span>
+          <div class="stats">
+            <span>🤍 1,068</span>
+            <span>💬 18</span>
+            <a href="https://instagram.com/nellavetrina" target="_blank" onclick="event.stopPropagation()"
+              style="color:white; font-size:18px; text-decoration:none;">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video (middle) -->
+    <div class="insta-item" onclick="openLightbox(1)">
+      <video
+        src="instavid.mp4"
+        poster="https://nellavetrina.com/wp-content/uploads/sb-instagram-feed-images/713583652_18595742578035147_5930506849750222161_nfull.webp"
+        muted loop playsinline
+        style="width:100%; height:500px; object-fit:cover; display:block; pointer-events:none;">
+      </video>
+      <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+                  background:rgba(255,255,255,0.85); border-radius:50%;
+                  width:56px; height:56px; display:flex; align-items:center; justify-content:center; pointer-events:none; z-index:2;">
+        <span style="font-size:20px; margin-left:4px;">&#9654;</span>
+      </div>
+      <div class="insta-overlay" style="z-index:3;">
+        <div class="overlay-top">
+          <span class="username">@nellavetrina</span>
+          <span class="caption">Tailor Made For You — A fully bespoke dining experience, tailor-made for you. Custom wall panels in oak and a double disappearing pocket glass sliding door system. Made with precision in Italy.</span>
+          <div class="tags">#nellavetrina #italianfurniture #customfurniture #italiandesign #luxuryfurniture</div>
+        </div>
+        <div class="overlay-bottom">
+          <span>⏱ June 1</span>
+          <div class="stats">
+            <span>🤍 1,069</span>
+            <span>💬 34</span>
+            <a href="https://instagram.com/nellavetrina" target="_blank" onclick="event.stopPropagation()"
+              style="color:white; font-size:18px; text-decoration:none;">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image 3 -->
+    <div class="insta-item" onclick="openLightbox(2)">
+      <img src="https://nellavetrina.com/wp-content/uploads/sb-instagram-feed-images/702465145_1010718868283094_701074748017828586_nfull.webp"
+        style="width:100%; height:500px; object-fit:cover; display:block;">
+      <div class="insta-overlay">
+        <div class="overlay-top">
+          <span class="username">@nellavetrina</span>
+          <span class="caption">Asymmetry and clean lines. 🖤 Designed by @annemariebarton</span>
+          <div class="tags">#nellavetrina #italianfurniture #customfurniture #italiandesign #luxuryfurniture</div>
+        </div>
+        <div class="overlay-bottom">
+          <span>⏱ May 22</span>
+          <div class="stats">
+            <span>🤍 989</span>
+            <span>💬 43</span>
+            <a href="https://instagram.com/nellavetrina" target="_blank" onclick="event.stopPropagation()"
+              style="color:white; font-size:18px; text-decoration:none;">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Follow Us -->
+  <div class="d-flex justify-content-center align-items-center mt-4">
+    <a href="https://instagram.com/nellavetrina" target="_blank" class="text-decoration-none text-dark"
+      style="border:1px solid #ccc; padding:10px 24px; background:#fff; display:flex; align-items:center; gap:8px;">
+      <i class="fa-brands fa-instagram"></i>
+      <small style="font-size:12px; letter-spacing:1px;">FOLLOW US</small>
     </a>
+  </div>
+
+ <!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()"
+  style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+         background:rgba(0,0,0,0.88); z-index:9999; justify-content:center; align-items:center;">
+
+  <!-- Prev Arrow -->
+  <button class="lb-arrow" id="lb-prev" onclick="event.stopPropagation(); navigate(-1)">&#8249;</button>
+
+  <!-- Popup card -->
+  <div onclick="event.stopPropagation()"
+    style="display:flex; flex-direction:column; width:320px; max-width:85vw;
+           border-radius:12px; overflow:hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.5);">
+
+    <!-- Media -->
+    <div style="background:#000;">
+      <img id="lb-img" src="" style="width:100%; height:240px; object-fit:cover; display:none;">
+      <video id="lb-vid" src="" controls style="width:100%; height:240px; display:none;"></video>
+    </div>
+
+    <!-- Info panel -->
+    <div style="background:white; padding:12px 14px;">
+
+      <!-- Username + close -->
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <div style="width:32px; height:32px; border-radius:50%; border:1px solid #ddd; overflow:hidden; flex-shrink:0;">
+            <img src="nvicon.jpg"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <strong style="font-size:12px;">nellavetrina</strong>
+        </div>
+        <span onclick="closeLightbox()" style="font-size:18px; cursor:pointer; color:#888;">&times;</span>
+      </div>
+
+      <!-- Caption -->
+      <p id="lb-caption" style="font-size:12px; line-height:1.5; color:#222; margin:0 0 6px;
+         display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;"></p>
+
+      <!-- Hashtags -->
+      <p id="lb-tags" style="font-size:11px; color:#00376b; margin:0 0 10px;
+         display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;"></p>
+
+      <!-- Bottom row — count | share | instagram -->
+      <div style="display:flex; align-items:center; gap:8px; font-size:11px; color:#555;
+                  border-top:1px solid #eee; padding-top:8px; flex-wrap:wrap;">
+        <span id="lb-count" style="color:#888;"></span>
+        <span style="color:#ddd;">|</span>
+        <span style="cursor:pointer; display:flex; align-items:center; gap:3px;">
+          🔗 <span>Share</span>
+        </span>
+        <span style="color:#ddd;">|</span>
+        <a href="https://instagram.com/nellavetrina" target="_blank"
+          style="display:flex; align-items:center; gap:4px; text-decoration:none; color:#555;">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Next Arrow -->
+  <button class="lb-arrow" id="lb-next" onclick="event.stopPropagation(); navigate(1)">&#8250;</button>
+
 </div>
+
 </div>
-    
+
+<script>
+  const items = [
+    {
+      type: 'img',
+      src: 'https://nellavetrina.com/wp-content/uploads/sb-instagram-feed-images/718190678_1023601810328133_2090369140582260045_nfull.webp',
+      caption: 'Where detail, light, and landscape converge 🖤 Designed by @simondeburbure. Photography by Thomas De Bruuyne for @cafeine.',
+      tags: '#nellavetrina #italianfurniture #customfurniture #italiandesign #luxuryfurniture',
+      count: '1 / 3'
+    },
+    {
+      type: 'vid',
+      src: 'instavid.mp4',
+      caption: 'Tailor Made For You — A fully bespoke dining experience, tailor-made for you. Custom wall panels in oak. Made with precision in Italy.',
+      tags: '#nellavetrina #italianfurniture #customfurniture #italiandesign #luxuryfurniture',
+      count: '2 / 3'
+    },
+    {
+      type: 'img',
+      src: 'https://nellavetrina.com/wp-content/uploads/sb-instagram-feed-images/702465145_1010718868283094_701074748017828586_nfull.webp',
+      caption: 'Asymmetry and clean lines. 🖤 Designed by @annemariebarton',
+      tags: '#nellavetrina #italianfurniture #customfurniture #italiandesign #luxuryfurniture',
+      count: '3 / 3'
+    }
+  ];
+
+  let current = 0;
+
+  function openLightbox(index) {
+    current = index;
+    document.getElementById('lightbox').style.display = 'flex';
+    loadItem(current);
+  }
+
+  function loadItem(index) {
+    const item = items[index];
+    const img = document.getElementById('lb-img');
+    const vid = document.getElementById('lb-vid');
+
+    vid.pause();
+    vid.src = '';
+
+    if (item.type === 'vid') {
+      vid.src = item.src;
+      vid.style.display = 'block';
+      img.style.display = 'none';
+      vid.play();
+    } else {
+      img.src = item.src;
+      img.style.display = 'block';
+      vid.style.display = 'none';
+    }
+
+    document.getElementById('lb-caption').innerText = item.caption;
+    document.getElementById('lb-tags').innerText = item.tags;
+    document.getElementById('lb-count').innerText = item.count;
+
+    document.getElementById('lb-prev').style.opacity = index === 0 ? '0.2' : '1';
+    document.getElementById('lb-next').style.opacity = index === items.length - 1 ? '0.2' : '1';
+  }
+
+  function navigate(dir) {
+    const next = current + dir;
+    if (next < 0 || next >= items.length) return;
+    current = next;
+    loadItem(current);
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+    const vid = document.getElementById('lb-vid');
+    vid.pause();
+    vid.src = '';
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (document.getElementById('lightbox').style.display === 'flex') {
+      if (e.key === 'ArrowLeft') navigate(-1);
+      if (e.key === 'ArrowRight') navigate(1);
+      if (e.key === 'Escape') closeLightbox();
+    }
+  });
+</script>
+
 
 
 <div class="w-100" style="background-color: black; min-height: 100vh; padding: 40px 0;">
   <div class="container-fluid">
 
     <div class="row justify-content-between align-items-stretch">
+ 
+    <footer class="bg-black text-white pt-5 pb-4">
+  <div class="container">
 
-      <div class="col-md-3 p-4  ms-5 position-relative overflow-hidden">
-        <div class="text-start">
-          
-          <div class="w-100 mb-4">
-            <h5 class="text-light m-0 fw-bold">CONTACT</h5>
-          </div>
+   
+    <div class="text-center mb-5">
+      <img src="nvicon.jpg" width="65" class="rounded-circle mb-3" alt="">
+      <h2 class="fw-light mb-2" style="letter-spacing:4px;">NELLA VETRINA</h2>
+      <p class="text-secondary mb-0">
+        Luxury Italian Furniture & Interior Design
+      </p>
+    </div>
 
-          <div class="w-100 mb-4">
-            <h5 class="text-light m-0 fw-bold">NEW YORK</h5>
-          </div>
+    <div class="row gy-5">
 
-          <div class="w-100 mb-3 makehovergray">
-            <h6 class="text-light m-0" style="font-size: 15px; line-height: 1.4;">
-              979 Third Avenue (D&D Building)<br>
-              Suite 805 — New York, NY 10022
-            </h6>
-          </div>
+      
+      <div class=" col-6 col-lg-3 ">
+        <h5 class="footerhead mb-4">ABOUT</h5>
 
-          <div class="w-100 pt-3 mb-4 makehovergray">
-            <h6 class="text-light m-0" style="font-size: 15px;">
-              <i class="fa-solid fa-phone me-2 fs-3"></i> +1 (516) 928-5007
-            </h6>
-          </div>
-
-          <div class="mb-4 pb-2 makehovergray">
-            <i class="fa-regular fa-envelope text-light fs-3"></i>
-          </div>
-
-          <div class="w-100 mb-2 ">
-            <h5 class="text-light m-0 fw-bold">ITALY</h5>
-          </div>
-
-          <div class="w-100 mb-2 makehovergray">
-            <h6 class="text-light m-0" style="font-size: 15px; line-height: 1.4;">
-              Via Milano, 8<br>
-              20831 — Seregno (MB)
-              <br>
-              <small class="text-white">Italy</small>
-            </h6>
-          </div>
-          <div class="text-light fs-3 " style="word-spacing: 15px;">
-         <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-pinterest"></i>
-          <i class="fa-brands fa-youtube"></i>
-          <i class="fa-brands fa-facebook-f"></i>
-          </div>
-        </div>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#" style="text-decoration: none; color: #fff;">Our Story</a></li>
+          <li><a href="#" style="text-decoration: none; color: #fff;" >Craftsmanship</a></li>
+          <li><a href="#" style="text-decoration: none; color: #fff;">Custom Projects</a></li>
+          <li><a href="#" style="text-decoration: none; color: #fff;">Journal</a></li>
+         <li><a href="#" style="text-decoration: none; color: #fff;">Designers</a></li>
+    <li><a href="#" style="text-decoration: none; color: #fff;">Custom Furniture</a></li>
+    <li><a href="#" style="text-decoration: none; color: #fff;">Materials & Finishes</a></li>
+    <li><a href="#" style="text-decoration: none; color: #fff;">Sustainability</a></li>
+    <li><a href="#" style="text-decoration: none; color: #fff;">Trade Program</a></li>
+    <li><a href="#" style="text-decoration: none; color: #fff;">Press & Media</a></li>
+    <li><a href="#" style="text-decoration: none; color: #fff;">Careers</a></li>
+        
+        </ul>
       </div>
 
-      <div class="col-md-3 p-4  position-relative overflow-hidden">
-        <div class="text-light">
-          
-          <div class="mb-4">
-            <h5 class="fw-bold mb-3">COLLECTIONS</h5>
-            <ul class="list-unstyled m-0 " style="font-size: 15px; line-height: 1.8;">
-              <li class=" makehovergray">Luxury Italian Furniture</li>
-              <li class=" makehovergray">Italian Designer Kitchen</li>
-              <li class=" makehovergray">Luxury Vanities</li>
-              <li class=" makehovergray">Italian Lighting</li>
-              <li class=" makehovergray">Luxury Outdoor Furniture</li>
-              <li class=" makehovergray">Custom Made Furniture</li>
+      
+      <div class="col-6 col-lg-3 ">
+        <h5 class="footerhead mb-4">CONTACT</h5>
+
+        <p class="mb-2">
+          <i class="fa-solid fa-phone me-2"></i>
+          +1 (516) 928-5007
+        </p>
+
+        <p class="mb-2">
+          <i class="fa-regular fa-envelope me-2"></i>
+          info@nellavetrina.com
+        </p>
+
+        <p class="text-secondary mb-0">
+          Monday – Friday<br>
+          9:00 AM – 6:00 PM
+        </p>
+      </div>
+
+
+
+
+
+
+     
+           
+      
+      <div class="col-6 col-lg-3 ">
+        <h5 class="footerhead mb-4">PRIVACY</h5>
+
+        <ul class="list-unstyled m-0 " style="font-size: 15px; line-height: 1.8;">
+              <li  >Privacy Policy</li>
+              <li >Cookie Policy</li>
+              <li >Terms and Conditions</li>
             </ul>
-          </div>
-
-          <div>
-            <h5 class="fw-bold mb-3">PRIVACY</h5>
-            <ul class="list-unstyled m-0 " style="font-size: 15px; line-height: 1.8;">
-              <li class=" makehovergray">Privacy Policy</li>
-              <li class=" makehovergray">Cookie Policy</li>
-              <li class=" makehovergray">Terms and Conditions</li>
-            </ul>
-          </div> 
-
-        </div>
       </div>
 
-      <div class="col-md-3 p-4 position-relative overflow-hidden">
-        <div class="text-light">
-          
-          <div class="mb-5">
-            <h5 class="fw-bold mb-3">NEWSLETTER</h5>
-            
-            <form action="#" method="POST" class="mb-3">
-              <div class="mb-2">
-                <input type="email" class="form-control text-light white-placeholder form-control-md bg-transparent text-light border-light-50 rounded-0" placeholder="YOUR EMAIL" required style="font-size: 14px;">
-              </div>
-              <div class="w-100 mt-3">
-                <button type="submit" class="btn btn-md btn-outline-light text-uppercase rounded-0 fw-semibold w-100" style="font-size: 12px; letter-spacing: 1px;">SUBSCRIBE</button>
-              </div>
-            </form>
+     
+      <div class="col-6 col-lg-3 ">
 
-            <div class="mb-3">
-              <div class="cf-turnstile" data-sitekey="your-key-here" data-theme="dark"></div>
-            </div>
+        <h5 class="footerhead mb-4">NEWSLETTER</h5>
 
-            <p class="m-0 text-white" style="font-size: 12px; line-height: 1.4;">
-              I consent to the use of my personal data to receive news and direct marketing from Nella Vetrina. <a href="" class="text-light makehovergray">Our Privacy Policy</a>
-            </p>
-          </div>
+        <p class="text-secondary">
+          Receive updates on new collections.
+        </p>
 
-          <div>
-            <h5 class="fw-bold mb-2">ABOUT</h5>
-            <p class="m-0 text-white" style="font-size: 13px; line-height: 1.5; text-align: justify;">
-              Nella Vetrina is one of the leading luxury furniture brands from Italy specializing in high-end modern and contemporary furniture designs. Focusing on Italian craftsmanship and the finest attention to detail, we produce luxury furniture handcrafted by skilled artisans using only the finest raw materials. Nella Vetrina is renowned for its bespoke, luxurious, and highly customizable designs that can be personalized and tailored for every client.
-            </p>
+        <input
+          class="form-control bg-transparent border-light rounded-0 text-white mb-3 white-placeholder"
+          placeholder="Your Email">
+
+        <button class="btn btn-outline-light rounded-0 w-100">
+          SUBSCRIBE
+        </button>
+
+      </div>
+
+    </div>
+
+    <hr class="border-secondary my-5">
+
+    <div class="d-lg-flex justify-content-between align-items-center text-center">
+
+      <p class="text-secondary mb-lg-0">
+        © 2026 Nella Vetrina. All Rights Reserved.
+      </p>
+
+      <div class="fs-4 mt-3 mt-lg-0">
+        <i class="fa-brands fa-instagram me-3"></i>
+        <i class="fa-brands fa-pinterest me-3"></i>
+        <i class="fa-brands fa-facebook-f me-3"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+ 
+ 
+ 
+ 
+ 
+      
           </div>
           
         </div>
       </div>
+   
 
     </div>
   </div>
