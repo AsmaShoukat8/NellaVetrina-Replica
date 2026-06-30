@@ -3,7 +3,13 @@
 A pixel-focused front-end recreation of the [Nella Vetrina](https://nellavetrina.com) homepage, built with HTML5, Bootstrap 5, custom CSS, and vanilla JavaScript. Built as a front-end practice project to sharpen layout, animation, and interaction skills — not affiliated with the original brand.
 
 
-📸 **Screenshot / GIF:** 
+📸 **Demo Video:** 
+
+https://github.com/user-attachments/assets/f8176196-d781-4ce3-a47b-fe0e1c32c4e7
+
+
+
+
 
 ---
 
