@@ -381,354 +381,215 @@
 </div>
 
    
-<!--image and details-->
-<div class="container ">
-  <div class="row mt-5 ">
-    <div class="col-lg-6 ms-5">
-      <img src="allproductsimgs/img1.jpg" alt="Saphir" class="img-fluid">
-    </div>
-    <div class="col-lg-5 d-flex flex-column justify-content-center">
-      <h5 class="">Saphir Sectionals in Beige Fabric</h3>
-      <p>Saphir modern Italian luxury designer sectional, upholstered in beige fabric with a leather-covered base. The structure is composed of wood. The backrest consists of three elements: the frame, cushion, and roller. A wide selection of leathers and fabrics is available (samples provided upon request). This collection showcases the finest craftsmanship by combining materials and forms that harmonize beautifully, culminating in an exquisite lifestyle experience. Customize your ideal sofa with 22 modular elements. Made in Italy.</p>
-      <button type="button" class="btn btn-dark rounded-0 W-75 H-25">INQUIRE</button>
-      <BR>
-      <button type="button" class="btn btn-dark rounded-0 W-75 H-25">ONLINE CONSULTATION</button>
-      <BR>
-      <button type="button" class="btn btn-dark rounded-0 W-75 H-25">CUSTOMIZATION REQUEST</button>
-    <BR>
-      <a class="text-black"href="" target="_blank">TECHNICAL SHEET</a>
 
+<div class="container-fluid ">
+  <div class="row mt-5"> 
+    <div class="col-lg-6 ms-1 ">
+      <div class="overflow-hidden" style="width:100%;">
+      
+      <div class="d-flex " style="position: relative; transition: left 0.5s ease-in-out;" id="imagelist" >
+      <img src="allproductsimgs/img1.jpg" alt="Saphir" class="img-fluid me-2" style="width: 100%;">
+      <img src="product1img/img2.jpg" class="img-fluid me-2" alt="" style="width: 100%;">
+      <img src="product1img/img3.jpg" class="img-fluid me-2" alt="" style="width: 100%;">
+      </div>
+      </div>
+
+      <div class="d-flex mt-4 mb-4 " style=" position: relative; " >
+      <img src="allproductsimgs/img1.jpg" alt="Saphir" class="img-fluid me-2" style="width: 100px; cursor: pointer;" id="img1">
+      <img src="product1img/img2.jpg" class="img-fluid me-2" alt="" style="width: 100px; cursor: pointer;" id="img2">
+      <img src="product1img/img3.jpg" class="img-fluid me-2" alt="" style="width: 100px; cursor: pointer;" id="img3">
+      </div>
+    </div>
+
+    <script>
+    let img1=document.getElementById("img1");
+    let img2=document.getElementById("img2");
+    let img3=document.getElementById("img3");
+    let imageslider=document.getElementById("imagelist");
+    
+    
+    imageslider.style.left = "0px";
+    
+    img2.style.opacity="0.5";
+    img3.style.opacity="0.5";
+    
+    img1.onclick=function(){
+     
+     imageslider.style.left="0";
+     img1.style.opacity="1.0";
+     img2.style.opacity="0.5";
+     img3.style.opacity="0.5";
+    }
+    img2.onclick=function(){
+     
+     imageslider.style.left="-100%";
+     img1.style.opacity="0.5";
+     img2.style.opacity="1.0";
+     img3.style.opacity="0.5";
+    }
+    img3.onclick=function(){
+     
+     imageslider.style.left="-205%";
+     img1.style.opacity="0.5";
+     img2.style.opacity="0.5";
+     img3.style.opacity="1.0";
+    }
+    </script>
+
+    <div class="col-lg-5 d-flex flex-column justify-content-center ">
+      <h5 class="fw-bold">Saphir Sectionals in Beige Fabric</h5>
+      <p>Saphir modern Italian luxury designer sectional, upholstered in beige fabric with a leather-covered base. The structure is composed of wood. The backrest consists of three elements: the frame, cushion, and roller. A wide selection of leathers and fabrics is available (samples provided upon request). This collection showcases the finest craftsmanship by combining materials and forms that harmonize beautifully, culminating in an exquisite lifestyle experience. Customize your ideal sofa with 22 modular elements. Made in Italy.</p>
+      <div class="d-flex flex-row ">
+      <i class="fa-regular fa-message fs-4 me-3"></i><button type="button" class="btn btn-dark rounded-0 w-75 ">INQUIRE</button>
+      
+        </div>
+<br>
+
+        <div class="d-flex flex-row">
+      <i class="fa-solid fa-globe  fs-4 me-3"></i><button type="button" class="btn btn-dark rounded-0 W-75">ONLINE CONSULTATION</button>
+      
+        </div>
+<br>
+        <div class="d-flex flex-row">
+      <i class="fa-solid fa-sliders  fs-4 me-3"></i><button type="button" class="btn btn-dark rounded-0 W-75 ">CUSTOMIZATION REQUEST</button>
+    
+      </div>
+      <br>
+
+      <div class="d-flex flex-row">
+      <i class="fa-solid fa-table  fs-4 me-3"></i><a class="text-black"href="" target="_blank">TECHNICAL SHEET</a>
+     </div>
       <hr>
       <small class="text-muted">Add to Wishlist</small>
+      <br>
     </div>
   </div>
 </div>
 
+<div class=" w-100 my-5" style="min-height: auto;">
+<div class="  w-100  mt-5 py-5  " style="background-color: #ccc;  min-height:auto;">
+<div class="container">
+  <div><h4 class="pb-5 pt-4 text-center fw-bold ">Let’s Design Your Home</h4></div>
+  <div class="row px-3">
+    <div class="col-md-3 text-center">
+      <i class="  fa-solid fa-phone"></i>
+      <h4>Call Us</h4>
+      <p class="py-2">Give us a call directly at 1 (646) 257 – 2491 and speak with our experts about your project</p>
+    </div>
+    <div class="col-md-3 text-center">
+      <i class="fa-solid fa-globe"></i>
+      <h4>Online Consultation</h4>
+      <p class="py-2">Book your complimentary New York showroom or online consultation to help guide your vision and answer any questions</p>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <i class="fa-solid fa-address-book"></i>
+      <h4>Contact Us</h4>
+      <p class="py-2">Send us an inquiry note detailing your project or product request and an expert will get back to you shortly</p>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <i class="fa-solid fa-share"></i>
+      <h4>Share</h4>
+      <p class="py-2">Follow us on social media and get inspired by recent design trends to help finish your next project</p>
+    </div>
+  </div>
+  <div></div>
+
+</div>
+</div>
+</div>
 
 
+<hr>
+<div class="container">
+<div class="row mt-5 mb-5 ">
+<div class="col-md-3"><h5 class="fw-bold">Technical Specifications</h5><p>Furniture, Living Room, Seating, Sofas / Sectionals</p></div>
+<div class="col-md-3"><h6 class="fw-bold">Type</h6></div>
+<div class="col-md-3"><h6 class="fw-bold">Dimensions</h6></div>
+<div class="col-md-3"><h6 class="fw-bold">Material</h6><p>Fabric</p></div>
+</div>
+<hr>
+<div class="row mt-5 mb-5 ">
+<div class="col-md-3"><h5 class="fw-bold">Similar Products</h5></div>
+<div class="col-md-9">
 
-
-
-<div class="w-100 position-relative" style="background-color: #F5F5F5; padding-bottom: 80px;">
-
-  <h3 class="text-center pt-5 mb-5 text-dark fw-bold">Find Inspiration on our Instagram</h3>
-
-  <div class="instagram-grid">
-
-   
-   
+   <div class="overflow-hidden" style=" height: 100%; width: 100%;">
+      
+      <div class="d-flex " style="position: relative; transition: left 0.5s ease-in-out;" id="imagecarousel" >
+        <img src="allproductsimgs/img1.jpg" class="img-fluid shadow px-2 " style="width: 50%; height:50%;">
+        <img src="allproductsimgs/img2.jpg" class="img-fluid  shadow px-2" alt="" style="width: 50%; height:50%;">
+      <img src="allproductsimgs/img3.jpg" class="img-fluid  shadow px-2" alt="" style="width: 50%; height:50%;">
+      <img src="allproductsimgs/img4.jpg"  class="img-fluid  shadow px-2" style="width: 50%; height:50%;">
+      <img src="allproductsimgs/img5.jpg" class="img-fluid shadow px-2" alt="" style="width: 50%; height:50%;">
+      <img src="allproductsimgs/img6.jpg"  class="img-fluid shadow px-2" style="width: 50%; height:50%;">
+    
+      </div>
 
      
-    <div class="insta-item" onclick="openLightbox(0)">
-      <video
-        src="bs1.mp4" loading="eager"
 
-        muted loop playsinline
-        style="width:100%; height:500px; object-fit:cover; display:block; pointer-events:none;">
-      </video>
-      <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
-                  background:rgba(255,255,255,0.85); border-radius:50%;
-                  width:56px; height:56px; display:flex; align-items:center; justify-content:center; pointer-events:none; z-index:2;">
-        <span style="font-size:20px; margin-left:4px;">&#9654;</span>
-      </div>
-      <div class="insta-overlay" style="z-index:3;">
-        <div class="overlay-top">
-          <span class="username">@nellavetrina</span>
-          <span class="caption">We craft each custom bedroom suite, including doors, wall panels, and millwork, to fit the bedroom concept. Showcasing a glass door system, integrated with custom joinery in light oak with bronze metal detailing and handles. Fully personalized to suit each client's requirements. A wide selection of glass decorations are available to choose from. To create a bespoke door and wall panel project for a living room environment, contact our design team. Made with precision in Italy.</span>
-          <div class="tags">
-#nellavetrina #italianfurniture #bedroomsanctuary #bedroomdesign #bedroomfurniture #customfurniture #italiandesign #interiordesign #decoration #interiordecor #modernfurniture #customdesign #contemporaryfurniture #homedecor #italianinterior #custommade #architecture #interiordesigner #luxuryfurniture #luxuryliving #italianliving #luxurydesigns
-</div>
-        </div>
-        <div class="overlay-bottom">
-          <span>⏱ June 1</span>
-          <div class="stats">
-            <span>🤍 1,043</span>
-            <span>💬 36</span>
-            <a href="https://instagram.com/nellavetrina" target="_blank" onclick="event.stopPropagation()"
-              style="color:white; font-size:18px; text-decoration:none;">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-
-    
-    <div class="insta-item" onclick="openLightbox(1)">
-      <video
-        src="bs2.mp4"
-        loading="eager"
-        muted loop playsinline
-        style="width:100%; height:500px; object-fit:cover; display:block; pointer-events:none;">
-      </video>
-      <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
-                  background:rgba(255,255,255,0.85); border-radius:50%;
-                  width:56px; height:56px; display:flex; align-items:center; justify-content:center; pointer-events:none; z-index:2;">
-        <span style="font-size:20px; margin-left:4px;">&#9654;</span>
-      </div>
-      <div class="insta-overlay" style="z-index:3;">
-        <div class="overlay-top">
-          <span class="username">@nellavetrina</span>
-          <span class="caption">Tailored Living. When wood, stone and metal become one harmonious vision. 🖤 Designed by @deandysonarchitects.</span>
-          <div class="tags">
-#nellavetrina #italianfurniture #customfurniture #italiandesign #interiordesign #decoration #interiordecor #modernfurniture #customdesign #contemporaryfurniture #homedecor #italianinterior #custommade #architecture #interiordesigner #luxuryfurniture #luxuryliving #italianliving #luxurydesigns
-</div>
-        </div>
-        <div class="overlay-bottom">
-          <span>⏱ June 1</span>
-          <div class="stats">
-            <span>🤍 1,043</span>
-            <span>💬 36</span>
-            <a href="https://instagram.com/nellavetrina" target="_blank" onclick="event.stopPropagation()"
-              style="color:white; font-size:18px; text-decoration:none;">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   
-    <div class="insta-item" onclick="openLightbox(2)">
-      <img  loading="eager" src="https://nellavetrina.com/wp-content/uploads/sb-instagram-feed-images/666390006_975950198426628_8074392977103739058_nfull.webp"
-        style="width:100%; height:500px; object-fit:cover; display:block;">
-      <div class="insta-overlay">
-        <div class="overlay-top">
-          <span class="username">@nellavetrina</span>
-          <span class="caption">Tailored Living. When wood, stone and metal become one harmonious vision. 🖤 Designed by @deandysonarchitects.</span>
-          <div class="tags">
-#nellavetrina #italianfurniture #customfurniture #italiandesign #interiordesign #decoration #interiordecor #modernfurniture #customdesign #contemporaryfurniture #homedecor #italianinterior #custommade #architecture #interiordesigner #luxuryfurniture #luxuryliving #italianliving #luxurydesigns</div>
-        </div>
-        <div class="overlay-bottom">
-          <span>⏱ May 22</span>
-          <div class="stats">
-            <span>🤍 989</span>
-            <span>💬 43</span>
-            <a href="https://instagram.com/nellavetrina" target="_blank" onclick="event.stopPropagation()"
-              style="color:white; font-size:18px; text-decoration:none;">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    
-    
-    <div class="insta-item" onclick="openLightbox(3)">
-      <video
-        src="bs3.mp4"
-        muted loop playsinline
-        loading="eager"
-        style="width:100%; height:500px; object-fit:cover; display:block; pointer-events:none;">
-      </video>
-      <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
-                  background:rgba(255,255,255,0.85); border-radius:50%;
-                  width:56px; height:56px; display:flex; align-items:center; justify-content:center; pointer-events:none; z-index:2;">
-        <span style="font-size:20px; margin-left:4px;">&#9654;</span>
-      </div>
-      <div class="insta-overlay" style="z-index:3;">
-        <div class="overlay-top">
-          <span class="username">@nellavetrina</span>
-          <span class="caption">What You Dream, We Can Create.
-
-Bespoke and thoughtfully tailored for each custom interior project, custom doors and wall panels are seamlessly integrated into each architectural setting. Featured in extra light clear glass and black metal detailing and handles. Fully personalized to suit each client's requirements. A wide selection of glass decorations are available to choose from. To create a bespoke door and wall panel project for a living room environment, contact our design team. Made with precision in Italy.</span>
-          <div class="tags">
-#nellavetrina #italianfurniture #customfurniture #italiandesign #interiordesign #decoration #interiordecor #modernfurniture #customdesign #contemporaryfurniture #homedecor #italianinterior #custommade #architecture #interiordesigner #luxuryfurniture #luxuryliving #italianliving #luxurydesigns
-</div>
-        </div>
-        <div class="overlay-bottom">
-          <span>⏱ June 1</span>
-          <div class="stats">
-            <span>🤍 1,043</span>
-            <span>💬 36</span>
-            <a href="https://instagram.com/nellavetrina" target="_blank" onclick="event.stopPropagation()"
-              style="color:white; font-size:18px; text-decoration:none;">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-
-  <!-- Follow Us -->
-  <div class="d-flex justify-content-center align-items-center mt-4">
-    <a href="https://instagram.com/nellavetrina" target="_blank" class="text-decoration-none text-dark"
-      style="border:1px solid #ccc; padding:10px 24px; background:#fff; display:flex; align-items:center; gap:8px;">
-      <i class="fa-brands fa-instagram"></i>
-      <small style="font-size:12px; letter-spacing:1px;">FOLLOW US</small>
-    </a>
-  </div>
-
- <!-- Lightbox -->
-<div id="lightbox" onclick="closeLightbox()"
-  style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
-         background:rgba(0,0,0,0.88); z-index:9999; justify-content:center; align-items:center;">
-
-  <!-- Prev Arrow -->
-  <button class="lb-arrow" id="lb-prev" onclick="event.stopPropagation(); navigate(-1)">&#8249;</button>
-
-  <!-- Popup card -->
-  <div onclick="event.stopPropagation()"
-    style="display:flex; flex-direction:column; width:320px; max-width:85vw;
-           border-radius:12px; overflow:hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.5);">
-
-    <!-- Media -->
-    <div style="background:#000;">
-      <img id="lb-img" src="" style="width:100%; height:240px; object-fit:cover; display:none;">
-      <video id="lb-vid" src="" controls style="width:100%; height:240px; display:none;"></video>
-    </div>
-
-    <!-- Info panel -->
-    <div style="background:white; padding:12px 14px;">
-
-      <!-- Username + close -->
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-        <div style="display:flex; align-items:center; gap:8px;">
-          <div style="width:32px; height:32px; border-radius:50%; border:1px solid #ddd; overflow:hidden; flex-shrink:0;">
-            <img src="nvicon.jpg"
-              style="width:100%; height:100%; object-fit:cover;">
-          </div>
-          <strong style="font-size:12px;">nellavetrina</strong>
-        </div>
-        <span onclick="closeLightbox()" style="font-size:18px; cursor:pointer; color:#888;">&times;</span>
       </div>
 
-      <!-- Caption -->
-      <p id="lb-caption" style="font-size:12px; line-height:1.5; color:#222; margin:0 0 6px;
-         display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;"></p>
-
-      <!-- Hashtags -->
-      <p id="lb-tags" style="font-size:11px; color:#00376b; margin:0 0 10px;
-         display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;"></p>
-
-      <!-- Bottom row — count | share | instagram -->
-      <div style="display:flex; align-items:center; gap:8px; font-size:11px; color:#555;
-                  border-top:1px solid #eee; padding-top:8px; flex-wrap:wrap;">
-        <span id="lb-count" style="color:#888;"></span>
-        <span style="color:#ddd;">|</span>
-        <span style="cursor:pointer; display:flex; align-items:center; gap:3px;">
-          🔗 <span>Share</span>
-        </span>
-        <span style="color:#ddd;">|</span>
-        <a href="https://instagram.com/nellavetrina" target="_blank"
-          style="display:flex; align-items:center; gap:4px; text-decoration:none; color:#555;">
-          <i class="fa-brands fa-instagram"></i> Instagram
-        </a>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Next Arrow -->
-  <button class="lb-arrow" id="lb-next" onclick="event.stopPropagation(); navigate(1)">&#8250;</button>
-
-</div>
-
-</div>
-
-<script>
-  const items = [
-    {
       
-      type: 'vid',
-      src: 'bs1.mp4',
-      caption: 'We craft each custom bedroom suite, including doors, wall panels, and millwork, to fit the bedroom concept. Showcasing a glass door system, integrated with custom joinery in light oak with bronze metal detailing and handles. Fully personalized to suit each clients requirements. A wide selection of glass decorations are available to choose from. To create a bespoke door and wall panel project for a living room environment, contact our design team. Made with precision in Italy.',
-      tags: '#nellavetrina #italianfurniture #bedroomsanctuary #bedroomdesign #bedroomfurniture #customfurniture #italiandesign #interiordesign #decoration #interiordecor #modernfurniture #customdesign #contemporaryfurniture #homedecor #italianinterior #custommade #architecture #interiordesigner #luxuryfurniture #luxuryliving #italianliving #luxurydesigns',
-      count: '1 / 4'
-    },
-    {
-      type: 'vid',
-      src: 'bs2.mp4',
-      caption: 'Tailor Made For You — A fully bespoke dining experience, tailor-made for you. Custom wall panels in oak. Made with precision in Italy.',
-      tags: '#nellavetrina #italianfurniture #customfurniture #italiandesign #luxuryfurniture',
-      count: '2 / 4'
-    },
-    {
-      type: 'img',
-      src: 'https://nellavetrina.com/wp-content/uploads/sb-instagram-feed-images/666390006_975950198426628_8074392977103739058_nfull.webp',
-      caption: 'Tailored Living. When wood, stone and metal become one harmonious vision. 🖤 Designed by @deandysonarchitects.',
-      tags: '#nellavetrina #italianfurniture #customfurniture #italiandesign #interiordesign #decoration #interiordecor #modernfurniture #customdesign #contemporaryfurniture #homedecor #italianinterior #custommade #architecture #interiordesigner #luxuryfurniture #luxuryliving #italianliving #luxurydesigns',
-      count: '3 / 4'
-    },
+   <div class="d-flex " style="justify-content:space-between;">
+      <i class="fa-solid fa-arrow-left fs-3 " id="al"></i>
+      <i class="fa-solid fa-arrow-right fs-3" id="ar" ></i>
+      </div>
 
-    {
-      
-      type: 'vid',
-      src: 'bs3.mp4',
-      caption: 'What You Dream, We Can Create.Bespoke and thoughtfully tailored for each custom interior project, custom doors and wall panels are seamlessly integrated into each architectural setting. Featured in extra light clear glass and black metal detailing and handles. Fully personalized to suit each clients requirements. A wide selection of glass decorations are available to choose from. To create a bespoke door and wall panel project for a living room environment, contact our design team. Made with precision in Italy.',
-      tags: '#nellavetrina #italianfurniture #bedroomsanctuary #bedroomdesign #bedroomfurniture #customfurniture #italiandesign #interiordesign #decoration #interiordecor #modernfurniture #customdesign #contemporaryfurniture #homedecor #italianinterior #custommade #architecture #interiordesigner #luxuryfurniture #luxuryliving #italianliving #luxurydesigns',
-      count: '4 / 4'
+</div>
+
+
+
+
+</div>
+
+</div>
+</div>
+
+    <script>
+    let rightArrow=document.getElementById("ar");
+    let leftArrow=document.getElementById("al");
+    let imagecars=document.getElementById("imagecarousel");
+    let imgcounter=1;
+    let currentleft=0;
+    imagecars.style.left="0%";
+    
+    rightArrow.onclick=function(){
+      imgcounter++;
+     if(imgcounter==4){
+      currentleft=0;
+      imagecars.style.left=currentleft+"%";
+      imgcounter=1;
+      return;
+     }
+     currentleft=currentleft-100;
+     imagecars.style.left=currentleft + "%";
+     
     }
-  ];
+    leftArrow.onclick=function(){
+     if(currentleft== 0)
+     {
+      imagecars.style.left = "0%";
 
-  let current = 0;
-
-  function openLightbox(index) {
-    current = index;
-    document.getElementById('lightbox').style.display = 'flex';
-    loadItem(current);
-  }
-
-  function loadItem(index) {
-    const item = items[index];
-    const img = document.getElementById('lb-img');
-    const vid = document.getElementById('lb-vid');
-
-    vid.pause();
-    vid.src = '';
-
-    if (item.type === 'vid') {
-      vid.src = item.src;
-      vid.style.display = 'block';
-      img.style.display = 'none';
-      vid.play();
-    } else {
-      img.src = item.src;
-      img.style.display = 'block';
-      vid.style.display = 'none';
+     }
+     else{
+      imgcounter--;
+     currentleft=currentleft+100;
+     imagecars.style.left=currentleft + "%";}
     }
+    
+    </script>
 
-    document.getElementById('lb-caption').innerText = item.caption;
-    document.getElementById('lb-tags').innerText = item.tags;
-    document.getElementById('lb-count').innerText = item.count;
 
-    document.getElementById('lb-prev').style.opacity = index === 0 ? '0.2' : '1';
-    document.getElementById('lb-next').style.opacity = index === items.length - 1 ? '0.2' : '1';
-  }
 
-  function navigate(dir) {
-    const next = current + dir;
-    if (next < 0 || next >= items.length) return;
-    current = next;
-    loadItem(current);
-  }
 
-  function closeLightbox() {
-    document.getElementById('lightbox').style.display = 'none';
-    const vid = document.getElementById('lb-vid');
-    vid.pause();
-    vid.src = '';
-  }
 
-  document.addEventListener('keydown', function(e) {
-    if (document.getElementById('lightbox').style.display === 'flex') {
-      if (e.key === 'ArrowLeft') navigate(-1);
-      if (e.key === 'ArrowRight') navigate(1);
-      if (e.key === 'Escape') closeLightbox();
-    }
-  });
-</script>
+
+
+
+
+
+
 
 
 
