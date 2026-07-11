@@ -289,12 +289,6 @@ h6:hover{
 }
 
 
-.instagram-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 4px;
-    width: 100%;
-}
 
 
 
@@ -302,22 +296,6 @@ h6:hover{
     
 
 
-
-/* Stack only on small and extra-small screens */
-@media (max-width: 991.98px){
-    .instagram-grid{
-        grid-template-columns: 1fr;
-    }
-
-    .instagram-grid img,
-    .instagram-grid video{
-        height: 500px !important;
-    }
-
-    .presscont{
-      display: none;
-    }
-}
 
 
 @media screen and (max-width: 768px) {
